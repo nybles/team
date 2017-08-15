@@ -1,0 +1,71 @@
+
+h1
+	width: 100%
+	text-align: center
+	font-family: "Dancing Script"
+	font-weight: bold
+	font-size: 52px
+	padding: 10px 0
+	font-style: italic
+	letter-spacing: 2px
+	margin: 50px 0
+	@media screen and (max-width: 360px)
+		font-size: 42px
+
+.team
+	max-width: 1000px
+	margin: 0 auto
+	text-align: center
+	.teamMember
+		display: inline-block
+		width: 17%
+		padding-top: 17%
+		margin: 1%
+		@media screen and (max-width: 850px)
+			width: 22%
+			padding-top: 22%
+		@media screen and (max-width: 640px)
+			width: 30%
+			padding-top: 30%
+		@media screen and (max-width: 470px)
+			width: 47%
+			padding-top: 47%
+			filter: blur(0px) saturate(100%)
+		@media screen and (max-width: 300px)
+			width: 97%
+			padding-top: 97%
+		overflow: hidden
+		background:
+			size: cover
+			position: center center
+		filter: blur(5px) saturate(15%)
+		transition: filter 0.3s ease-in-out
+		position: relative
+
+		h1
+			position: absolute
+			bottom: 0
+			background-color: rgba(black,0.6)
+			margin: 0
+			color: white
+			font-weight: normal
+			font-size: 20px
+	
+		&:hover, &.randomMember
+			filter: blur(0px)
+			cursor: pointer
+	
+	
+p
+	width: 100%
+	text-align: center
+	font-family: sans-serif
+	font-size: 14px
+	margin: 50px 0
+	color: #AAA
+	a
+		color: #666
+		text-decoration: none
+		transition: color 0.2s ease
+		&:hover
+			color: royalblue
